@@ -1,0 +1,186 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Resources:
+  DemoVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.1.0.0/16
+      Tags:
+        - Key: Name
+          Value: DemoVPC
+
+  InternetGateway:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - Key: Name
+          Value: InternetGateway
+  VPCGatewayAttachment:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref DemoVPC
+      InternetGatewayId: !Ref InternetGateway
+
+  # Public subnet network setting.
+  PublicSubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref DemoVPC
+      CidrBlock: 10.1.1.0/24
+      Tags:
+        - Key: Name
+          Value: DemoPublicSubnet
+  PublicSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties: 
+      GroupDescription: PublicSecurityGroup
+      GroupName: PublicSecurityGroup
+      SecurityGroupIngress: 
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: icmp
+          FromPort: -1
+          ToPort: -1
+          CidrIp: 0.0.0.0/0
+      VpcId: !Ref DemoVPC
+      Tags:
+        - Key: Name
+          Value: DemoPublicSecurityGroup
+
+  NATGateway:
+    Type: AWS::EC2::NatGateway
+    Properties:
+      AllocationId: !GetAtt EIP.AllocationId
+      SubnetId: !Ref PublicSubnet
+      Tags:
+      - Key: Name
+        Value: NATGateway
+  EIP:
+    Type: AWS::EC2::EIP
+    Properties:
+        Domain: vpc
+
+  PublicRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref DemoVPC
+      Tags:
+        - Key: Name
+          Value: PublicRouteTable
+  PublicRoute:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref InternetGateway
+  PublicRouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet
+      RouteTableId: !Ref PublicRouteTable
+
+  # Public subnet instance.
+  JumpServer:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-06ee4e2261a4dc5c3
+      InstanceType: t2.micro
+      KeyName: jumperKeyPair
+      NetworkInterfaces: 
+      - AssociatePublicIpAddress: true
+        DeviceIndex: "0"
+        GroupSet: 
+          - !Ref PublicSecurityGroup
+        SubnetId: !Ref PublicSubnet
+      Tags:
+        - Key: Name
+          Value: JumpServer
+
+
+  # Private subnet network setting.
+  PrivateSubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref DemoVPC
+      CidrBlock: 10.1.2.0/24
+      Tags:
+        - Key: Name
+          Value: PrivateSubnet
+
+  PrivateSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: PrivateSecurityGroup
+      GroupName: PrivateSecurityGroup
+      SecurityGroupIngress: 
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 8000
+          ToPort: 8000
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
+      VpcId: !Ref DemoVPC
+      Tags:
+        - Key: Name
+          Value: PrivateSecurityGroup
+
+  PrivateRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref DemoVPC
+      Tags:
+        - Key: Name
+          Value: PrivateRouteTable
+  PrivateRouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PrivateSubnet
+      RouteTableId: !Ref PrivateRouteTable
+  PrivateRouteTableRoute:
+    DependsOn: NATGateway
+    Type: AWS::EC2::Route
+    Properties:
+        RouteTableId: !Ref PrivateRouteTable
+        DestinationCidrBlock: '0.0.0.0/0'
+        NatGatewayId: !Ref NATGateway
+
+  # Private subnet instance.
+  # AppServer:
+  #   Type: AWS::EC2::Instance
+  #   Properties:
+  #     ImageId: ami-06ee4e2261a4dc5c3
+  #     InstanceType: t2.micro
+  #     KeyName: appKeyPair
+  #     SubnetId: !Ref PrivateSubnet
+  #     SecurityGroupIds:
+  #       - !Ref PrivateSecurityGroup
+  #     Tags:
+  #       - Key: Name
+  #         Value: AppServer
+
+Outputs:
+  DemoVPC:
+    Description: DemoVPC
+    Value: !Ref DemoVPC
+    Export:
+      Name:
+        'Fn::Sub': 'Demo-VPCID'
+  PrivateSubnet:
+    Description: PrivateSubnet
+    Value: !Ref PrivateSubnet
+    Export:
+      Name:
+        'Fn::Sub': 'Demo-PrivateSubnetID'
+  PrivateSecurityGroup:
+    Description: PrivateSecurityGroup
+    Value: !Ref PrivateSecurityGroup
+    Export:
+      Name:
+        'Fn::Sub': 'Demo-PrivateSecurityGroupID'
