@@ -1,0 +1,1559 @@
+C:\Users\Blue\Work\graalvm-ce-java17-22.3.0\bin\java.exe -javaagent:C:\Users\Blue\Work\ideaIC-2022.3.win\lib\idea_rt.jar=60089:C:\Users\Blue\Work\ideaIC-2022.3.win\bin -Dfile.encoding=UTF-8 -classpath C:\Users\Blue\Work\Projects\redis-benchmark\redis-benchmark\target\classes;C:\Users\Blue\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.7.15\spring-boot-starter-web-2.7.15.jar;C:\Users\Blue\.m2\repository\org\springframework\boot\spring-boot-starter\2.7.15\spring-boot-starter-2.7.15.jar;C:\Users\Blue\.m2\repository\org\springframework\boot\spring-boot\2.7.15\spring-boot-2.7.15.jar;C:\Users\Blue\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.7.15\spring-boot-autoconfigure-2.7.15.jar;C:\Users\Blue\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.7.15\spring-boot-starter-logging-2.7.15.jar;C:\Users\Blue\.m2\repository\ch\qos\logback\logback-classic\1.2.12\logback-classic-1.2.12.jar;C:\Users\Blue\.m2\repository\ch\qos\logback\logback-core\1.2.12\logback-core-1.2.12.jar;C:\Users\Blue\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.17.2\log4j-to-slf4j-2.17.2.jar;C:\Users\Blue\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\Blue\.m2\repository\org\slf4j\jul-to-slf4j\1.7.36\jul-to-slf4j-1.7.36.jar;C:\Users\Blue\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\Blue\.m2\repository\org\springframework\spring-core\5.3.29\spring-core-5.3.29.jar;C:\Users\Blue\.m2\repository\org\springframework\spring-jcl\5.3.29\spring-jcl-5.3.29.jar;C:\Users\Blue\.m2\repository\org\yaml\snakeyaml\1.30\snakeyaml-1.30.jar;C:\Users\Blue\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.7.15\spring-boot-starter-json-2.7.15.jar;C:\Users\Blue\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.5\jackson-databind-2.13.5.jar;C:\Users\Blue\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.5\jackson-annotations-2.13.5.jar;C:\Users\Blue\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.5\jackson-core-2.13.5.jar;C:\Users\Blue\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.13.5\jackson-datatype-jdk8-2.13.5.jar;C:\Users\Blue\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.5\jackson-datatype-jsr310-2.13.5.jar;C:\Users\Blue\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.13.5\jackson-module-parameter-names-2.13.5.jar;C:\Users\Blue\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.7.15\spring-boot-starter-tomcat-2.7.15.jar;C:\Users\Blue\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.79\tomcat-embed-core-9.0.79.jar;C:\Users\Blue\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.79\tomcat-embed-el-9.0.79.jar;C:\Users\Blue\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.79\tomcat-embed-websocket-9.0.79.jar;C:\Users\Blue\.m2\repository\org\springframework\spring-web\5.3.29\spring-web-5.3.29.jar;C:\Users\Blue\.m2\repository\org\springframework\spring-beans\5.3.29\spring-beans-5.3.29.jar;C:\Users\Blue\.m2\repository\org\springframework\spring-webmvc\5.3.29\spring-webmvc-5.3.29.jar;C:\Users\Blue\.m2\repository\org\springframework\spring-aop\5.3.29\spring-aop-5.3.29.jar;C:\Users\Blue\.m2\repository\org\springframework\spring-context\5.3.29\spring-context-5.3.29.jar;C:\Users\Blue\.m2\repository\org\springframework\spring-expression\5.3.29\spring-expression-5.3.29.jar;C:\Users\Blue\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;C:\Users\Blue\.m2\repository\org\mybatis\spring\boot\mybatis-spring-boot-starter\2.3.1\mybatis-spring-boot-starter-2.3.1.jar;C:\Users\Blue\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.7.15\spring-boot-starter-jdbc-2.7.15.jar;C:\Users\Blue\.m2\repository\com\zaxxer\HikariCP\4.0.3\HikariCP-4.0.3.jar;C:\Users\Blue\.m2\repository\org\springframework\spring-jdbc\5.3.29\spring-jdbc-5.3.29.jar;C:\Users\Blue\.m2\repository\org\springframework\spring-tx\5.3.29\spring-tx-5.3.29.jar;C:\Users\Blue\.m2\repository\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\2.3.1\mybatis-spring-boot-autoconfigure-2.3.1.jar;C:\Users\Blue\.m2\repository\org\mybatis\mybatis\3.5.13\mybatis-3.5.13.jar;C:\Users\Blue\.m2\repository\org\mybatis\mybatis-spring\2.1.1\mybatis-spring-2.1.1.jar;C:\Users\Blue\.m2\repository\software\amazon\awssdk\rds\2.20.5\rds-2.20.5.jar;C:\Users\Blue\.m2\repository\software\amazon\awssdk\aws-query-protocol\2.20.5\aws-query-protocol-2.20.5.jar;C:\Users\Blue\.m2\repository\software\amazon\awssdk\protocol-core\2.20.5\protocol-core-2.20.5.jar;C:\Users\Blue\.m2\repository\software\amazon\awssdk\profiles\2.20.5\profiles-2.20.5.jar;C:\Users\Blue\.m2\repository\software\amazon\awssdk\sdk-core\2.20.5\sdk-core-2.20.5.jar;C:\Users\Blue\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Blue\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Blue\.m2\repository\software\amazon\awssdk\auth\2.20.5\auth-2.20.5.jar;C:\Users\Blue\.m2\repository\software\amazon\eventstream\eventstream\1.0.1\eventstream-1.0.1.jar;C:\Users\Blue\.m2\repository\software\amazon\awssdk\http-client-spi\2.20.5\http-client-spi-2.20.5.jar;C:\Users\Blue\.m2\repository\software\amazon\awssdk\regions\2.20.5\regions-2.20.5.jar;C:\Users\Blue\.m2\repository\software\amazon\awssdk\annotations\2.20.5\annotations-2.20.5.jar;C:\Users\Blue\.m2\repository\software\amazon\awssdk\utils\2.20.5\utils-2.20.5.jar;C:\Users\Blue\.m2\repository\software\amazon\awssdk\aws-core\2.20.5\aws-core-2.20.5.jar;C:\Users\Blue\.m2\repository\software\amazon\awssdk\metrics-spi\2.20.5\metrics-spi-2.20.5.jar;C:\Users\Blue\.m2\repository\software\amazon\awssdk\json-utils\2.20.5\json-utils-2.20.5.jar;C:\Users\Blue\.m2\repository\software\amazon\awssdk\third-party-jackson-core\2.20.5\third-party-jackson-core-2.20.5.jar;C:\Users\Blue\.m2\repository\software\amazon\awssdk\endpoints-spi\2.20.5\endpoints-spi-2.20.5.jar;C:\Users\Blue\.m2\repository\software\amazon\awssdk\apache-client\2.20.5\apache-client-2.20.5.jar;C:\Users\Blue\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\Blue\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Blue\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\Blue\.m2\repository\software\amazon\awssdk\netty-nio-client\2.20.5\netty-nio-client-2.20.5.jar;C:\Users\Blue\.m2\repository\io\netty\netty-codec-http\4.1.97.Final\netty-codec-http-4.1.97.Final.jar;C:\Users\Blue\.m2\repository\io\netty\netty-codec-http2\4.1.97.Final\netty-codec-http2-4.1.97.Final.jar;C:\Users\Blue\.m2\repository\io\netty\netty-codec\4.1.97.Final\netty-codec-4.1.97.Final.jar;C:\Users\Blue\.m2\repository\io\netty\netty-transport\4.1.97.Final\netty-transport-4.1.97.Final.jar;C:\Users\Blue\.m2\repository\io\netty\netty-resolver\4.1.97.Final\netty-resolver-4.1.97.Final.jar;C:\Users\Blue\.m2\repository\io\netty\netty-common\4.1.97.Final\netty-common-4.1.97.Final.jar;C:\Users\Blue\.m2\repository\io\netty\netty-buffer\4.1.97.Final\netty-buffer-4.1.97.Final.jar;C:\Users\Blue\.m2\repository\io\netty\netty-handler\4.1.97.Final\netty-handler-4.1.97.Final.jar;C:\Users\Blue\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.97.Final\netty-transport-native-unix-common-4.1.97.Final.jar;C:\Users\Blue\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.97.Final\netty-transport-classes-epoll-4.1.97.Final.jar;C:\Users\Blue\.m2\repository\org\postgresql\postgresql\42.3.8\postgresql-42.3.8.jar;C:\Users\Blue\.m2\repository\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar;C:\Users\Blue\.m2\repository\software\amazon\jdbc\aws-advanced-jdbc-wrapper\2.2.5\aws-advanced-jdbc-wrapper-2.2.5.jar org.example.Main
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.15)
+
+2023-11-13 23:24:15.359  INFO 12980 --- [           main] org.example.Main                         : Starting Main using Java 17.0.5 on DESKTOP-56OB5IG with PID 12980 (C:\Users\Blue\Work\Projects\redis-benchmark\redis-benchmark\target\classes started by Blue in C:\Users\Blue\Work\Projects\redis-benchmark\redis-benchmark)
+2023-11-13 23:24:15.362  INFO 12980 --- [           main] org.example.Main                         : No active profile set, falling back to 1 default profile: "default"
+2023-11-13 23:24:16.660  INFO 12980 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-13 23:24:16.671  INFO 12980 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-13 23:24:16.672  INFO 12980 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-13 23:24:16.784  INFO 12980 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-13 23:24:16.784  INFO 12980 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1346 ms
+2023-11-13 23:24:17.315  INFO 12980 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-13 23:24:17.324  INFO 12980 --- [           main] org.example.Main                         : Started Main in 2.479 seconds (JVM running for 2.95)
+2023-11-13 23:24:28.177  INFO 12980 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-13 23:24:28.177  INFO 12980 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-13 23:24:28.178  INFO 12980 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-13 23:24:28.215  INFO 12980 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-13 23:24:28.225 TRACE 12980 --- [nio-8080-exec-1] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:24:28.286 DEBUG 12980 --- [nio-8080-exec-1] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:24:28.292 TRACE 12980 --- [nio-8080-exec-1] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:24:29.821 TRACE 12980 --- [nio-8080-exec-1] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:24:30.017 TRACE 12980 --- [nio-8080-exec-1] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_DELETED]
+2023-11-13 23:24:30.017 TRACE 12980 --- [nio-8080-exec-1] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, AVAILABLE, weight=1705, 2023-11-13 23:24:28.0]
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:30.021 TRACE 12980 --- [nio-8080-exec-1] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:30.042 TRACE 12980 --- [nio-8080-exec-1] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 54.248.98.213
+2023-11-13 23:24:30.217 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+	 }
+	
+]
+2023-11-13 23:24:30.218 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+	 }
+	
+]
+2023-11-13 23:24:30.223 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getNetworkTimeout'
+2023-11-13 23:24:30.232 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:30.234 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:24:30.234 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:24:30.242 TRACE 12980 --- [nio-8080-exec-1] s.a.j.p.e.HostMonitoringConnectionPlugin : Executing method 'Connection.isValid', monitoring is activated.
+2023-11-13 23:24:30.242 TRACE 12980 --- [nio-8080-exec-1] s.a.j.p.e.HostMonitoringConnectionPlugin : Monitoring HostSpec is associated with a cluster endpoint, plugin needs to identify the cluster connection.
+2023-11-13 23:24:30.330 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isValid'
+2023-11-13 23:24:30.418 TRACE 12980 --- [nio-8080-exec-1] s.a.j.p.e.HostMonitoringConnectionPlugin : Monitoring deactivated for method 'Connection.isValid'.
+2023-11-13 23:24:30.419 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getTransactionIsolation'
+2023-11-13 23:24:30.510 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:30.513  INFO 12980 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-13 23:24:30.516 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:24:30.518 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.prepareStatement'
+2023-11-13 23:24:30.523 TRACE 12980 --- [nio-8080-exec-1] s.a.j.p.e.HostMonitoringConnectionPlugin : Executing method 'PreparedStatement.execute', monitoring is activated.
+2023-11-13 23:24:30.523 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'PreparedStatement.execute'
+2023-11-13 23:24:30.608 TRACE 12980 --- [nio-8080-exec-1] s.a.j.p.e.HostMonitoringConnectionPlugin : Monitoring deactivated for method 'PreparedStatement.execute'.
+2023-11-13 23:24:30.609 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'PreparedStatement.getResultSet'
+2023-11-13 23:24:30.613 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSet.getMetaData'
+2023-11-13 23:24:30.615 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSetMetaData.getColumnCount'
+2023-11-13 23:24:30.615 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSetMetaData.getColumnLabel'
+2023-11-13 23:24:30.616 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSetMetaData.getColumnType'
+2023-11-13 23:24:30.623 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:24:30.623 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:24:30.625 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:24:30.713 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSetMetaData.getColumnClassName'
+2023-11-13 23:24:30.812 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSet.getType'
+2023-11-13 23:24:30.815 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSet.isClosed'
+2023-11-13 23:24:30.816 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSet.next'
+2023-11-13 23:24:30.834 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSet.getString'
+2023-11-13 23:24:30.834 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSet.isClosed'
+2023-11-13 23:24:30.834 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSet.next'
+2023-11-13 23:24:30.835 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSet.close'
+2023-11-13 23:24:30.841 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getMetaData'
+2023-11-13 23:24:30.848 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'DatabaseMetaData.supportsMultipleResultSets'
+2023-11-13 23:24:30.848 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'PreparedStatement.getMoreResults'
+2023-11-13 23:24:30.849 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'PreparedStatement.getUpdateCount'
+2023-11-13 23:24:30.849 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'PreparedStatement.close'
+2023-11-13 23:24:30.858 TRACE 12980 --- [nio-8080-exec-1] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.clearWarnings'
+2023-11-13 23:24:31.838 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:24:31.940 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, AVAILABLE, weight=1705, 2023-11-13 23:24:28.0]
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:31.941 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:31.941 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 54.248.98.213
+2023-11-13 23:24:32.136 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+	 }
+	
+]
+2023-11-13 23:24:32.137 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+	 }
+	
+]
+2023-11-13 23:24:32.138 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:32.141 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:24:32.141 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:24:32.142 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:32.145 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:24:32.151 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:24:32.157 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:24:33.153 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:24:33.233 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, AVAILABLE, weight=1705, 2023-11-13 23:24:28.0]
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:33.235 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:33.236 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 54.248.98.213
+2023-11-13 23:24:33.401 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+	 }
+	
+]
+2023-11-13 23:24:33.402 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+	 }
+	
+]
+2023-11-13 23:24:33.402 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:33.402 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:24:33.402 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:24:33.402 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:33.402 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:24:33.403 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:24:33.404 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:24:34.848 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:24:34.964 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, AVAILABLE, weight=1705, 2023-11-13 23:24:28.0]
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:34.964 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:34.966 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 54.248.98.213
+2023-11-13 23:24:35.201 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+		org.postgresql.jdbc.PgConnection@644cceda
+	 }
+	
+]
+2023-11-13 23:24:35.202 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+		org.postgresql.jdbc.PgConnection@644cceda
+	 }
+	
+]
+2023-11-13 23:24:35.203 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:35.203 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:24:35.203 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:24:35.203 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:35.204 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:24:35.205 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:24:35.206 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:24:36.682 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:24:36.802 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, AVAILABLE, weight=1705, 2023-11-13 23:24:28.0]
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:36.802 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:36.803 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 54.248.98.213
+2023-11-13 23:24:37.052 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+		org.postgresql.jdbc.PgConnection@644cceda
+		org.postgresql.jdbc.PgConnection@53741715
+	 }
+	
+]
+2023-11-13 23:24:37.052 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+		org.postgresql.jdbc.PgConnection@644cceda
+		org.postgresql.jdbc.PgConnection@53741715
+	 }
+	
+]
+2023-11-13 23:24:37.052 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:37.053 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:24:37.053 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:24:37.053 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:37.053 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:24:37.054 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:24:37.055 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:24:38.104 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:24:38.195 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, AVAILABLE, weight=1705, 2023-11-13 23:24:28.0]
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:38.198 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:38.199 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 54.248.98.213
+2023-11-13 23:24:38.374 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+		org.postgresql.jdbc.PgConnection@644cceda
+		org.postgresql.jdbc.PgConnection@53741715
+		org.postgresql.jdbc.PgConnection@51cc29bf
+	 }
+	
+]
+2023-11-13 23:24:38.375 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+		org.postgresql.jdbc.PgConnection@644cceda
+		org.postgresql.jdbc.PgConnection@53741715
+		org.postgresql.jdbc.PgConnection@51cc29bf
+	 }
+	
+]
+2023-11-13 23:24:38.377 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:38.377 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:24:38.378 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:24:38.379 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:38.379 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:24:38.382 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:24:38.386 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:24:39.614 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:24:39.708 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, AVAILABLE, weight=1705, 2023-11-13 23:24:28.0]
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:39.709 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:39.709 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 54.248.98.213
+2023-11-13 23:24:39.892 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+		org.postgresql.jdbc.PgConnection@644cceda
+		org.postgresql.jdbc.PgConnection@53741715
+		org.postgresql.jdbc.PgConnection@51cc29bf
+		org.postgresql.jdbc.PgConnection@23bbba99
+	 }
+	
+]
+2023-11-13 23:24:39.892 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+		org.postgresql.jdbc.PgConnection@644cceda
+		org.postgresql.jdbc.PgConnection@53741715
+		org.postgresql.jdbc.PgConnection@51cc29bf
+		org.postgresql.jdbc.PgConnection@23bbba99
+	 }
+	
+]
+2023-11-13 23:24:39.892 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:39.893 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:24:39.893 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:24:39.893 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:39.893 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:24:39.894 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:24:39.894 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:24:41.170 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:24:41.279 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, AVAILABLE, weight=1705, 2023-11-13 23:24:28.0]
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:41.281 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:41.281 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 54.248.98.213
+2023-11-13 23:24:41.483 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+		org.postgresql.jdbc.PgConnection@644cceda
+		org.postgresql.jdbc.PgConnection@53741715
+		org.postgresql.jdbc.PgConnection@51cc29bf
+		org.postgresql.jdbc.PgConnection@23bbba99
+		org.postgresql.jdbc.PgConnection@5507b97
+	 }
+	
+]
+2023-11-13 23:24:41.483 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+		org.postgresql.jdbc.PgConnection@644cceda
+		org.postgresql.jdbc.PgConnection@53741715
+		org.postgresql.jdbc.PgConnection@51cc29bf
+		org.postgresql.jdbc.PgConnection@23bbba99
+		org.postgresql.jdbc.PgConnection@5507b97
+	 }
+	
+]
+2023-11-13 23:24:41.483 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:41.484 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:24:41.484 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:24:41.484 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:41.485 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:24:41.486 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:24:41.488 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:24:42.477 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:24:42.554 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, AVAILABLE, weight=1705, 2023-11-13 23:24:28.0]
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:42.556 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:42.557 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 54.248.98.213
+2023-11-13 23:24:42.705 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+		org.postgresql.jdbc.PgConnection@644cceda
+		org.postgresql.jdbc.PgConnection@53741715
+		org.postgresql.jdbc.PgConnection@51cc29bf
+		org.postgresql.jdbc.PgConnection@23bbba99
+		org.postgresql.jdbc.PgConnection@5507b97
+		org.postgresql.jdbc.PgConnection@76ef0897
+	 }
+	
+]
+2023-11-13 23:24:42.706 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+		org.postgresql.jdbc.PgConnection@644cceda
+		org.postgresql.jdbc.PgConnection@53741715
+		org.postgresql.jdbc.PgConnection@51cc29bf
+		org.postgresql.jdbc.PgConnection@23bbba99
+		org.postgresql.jdbc.PgConnection@5507b97
+		org.postgresql.jdbc.PgConnection@76ef0897
+	 }
+	
+]
+2023-11-13 23:24:42.706 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:42.707 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:24:42.708 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:24:42.708 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:42.709 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:24:42.711 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:24:42.712 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:24:43.961 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:24:44.063 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, AVAILABLE, weight=1705, 2023-11-13 23:24:28.0]
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:44.065 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:24:30.0092818]
+2023-11-13 23:24:44.066 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 54.248.98.213
+2023-11-13 23:24:44.266 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+		org.postgresql.jdbc.PgConnection@644cceda
+		org.postgresql.jdbc.PgConnection@53741715
+		org.postgresql.jdbc.PgConnection@51cc29bf
+		org.postgresql.jdbc.PgConnection@23bbba99
+		org.postgresql.jdbc.PgConnection@5507b97
+		org.postgresql.jdbc.PgConnection@76ef0897
+		org.postgresql.jdbc.PgConnection@465e5624
+	 }
+	
+]
+2023-11-13 23:24:44.266 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+		org.postgresql.jdbc.PgConnection@644cceda
+		org.postgresql.jdbc.PgConnection@53741715
+		org.postgresql.jdbc.PgConnection@51cc29bf
+		org.postgresql.jdbc.PgConnection@23bbba99
+		org.postgresql.jdbc.PgConnection@5507b97
+		org.postgresql.jdbc.PgConnection@76ef0897
+		org.postgresql.jdbc.PgConnection@465e5624
+	 }
+	
+]
+2023-11-13 23:24:44.267 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:24:44.267 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:24:44.267 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:24:44.267 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+
+------------------------------------------------------------
+2023-11-13 23:25:43.079 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:43.086 DEBUG 12980 --- [nio-8080-exec-4] s.a.j.p.f.FailoverConnectionPlugin       : Detected an exception while executing a command: An I/O error occurred while sending to the backend.
+2023-11-13 23:25:43.087 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [WENT_DOWN, NODE_CHANGED]
+2023-11-13 23:25:43.087 DEBUG 12980 --- [nio-8080-exec-4] s.a.j.p.f.FailoverConnectionPlugin       : Starting writer failover procedure.
+2023-11-13 23:25:43.089 DEBUG 12980 --- [pool-2-thread-1] .j.p.f.ClusterAwareReaderFailoverHandler : [TaskA] Attempting to re-connect to the current writer instance: 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/'
+2023-11-13 23:25:43.089 DEBUG 12980 --- [pool-2-thread-2] .j.p.f.ClusterAwareReaderFailoverHandler : [TaskB] Attempting to connect to a new writer instance.
+2023-11-13 23:25:43.090 DEBUG 12980 --- [pool-3-thread-1] .j.p.f.ClusterAwareReaderFailoverHandler : Trying to connect to reader: 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/', with properties '{sslmode=require, password=12345678, database=postgres, wrapperDialect=aurora-pg, wrapperPlugins=auroraConnectionTracker,failover,efm, user=postgres, ssl=true}'
+2023-11-13 23:25:44.310 TRACE 12980 --- [pool-3-thread-1] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+		org.postgresql.jdbc.PgConnection@644cceda
+		org.postgresql.jdbc.PgConnection@53741715
+		org.postgresql.jdbc.PgConnection@51cc29bf
+		org.postgresql.jdbc.PgConnection@23bbba99
+		org.postgresql.jdbc.PgConnection@5507b97
+		org.postgresql.jdbc.PgConnection@76ef0897
+		org.postgresql.jdbc.PgConnection@465e5624
+	 }
+		[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+	 }
+	
+]
+2023-11-13 23:25:44.311 TRACE 12980 --- [pool-3-thread-1] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+		org.postgresql.jdbc.PgConnection@644cceda
+		org.postgresql.jdbc.PgConnection@53741715
+		org.postgresql.jdbc.PgConnection@51cc29bf
+		org.postgresql.jdbc.PgConnection@23bbba99
+		org.postgresql.jdbc.PgConnection@5507b97
+		org.postgresql.jdbc.PgConnection@76ef0897
+		org.postgresql.jdbc.PgConnection@465e5624
+	 }
+		[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+	 }
+	
+]
+2023-11-13 23:25:44.312 DEBUG 12980 --- [pool-3-thread-1] .j.p.f.ClusterAwareReaderFailoverHandler : Connected to reader: 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/'
+2023-11-13 23:25:44.312 DEBUG 12980 --- [pool-3-thread-1] .j.p.f.ClusterAwareReaderFailoverHandler : New reader connection object: org.postgresql.jdbc.PgConnection@44a4f24
+2023-11-13 23:25:44.315 DEBUG 12980 --- [pool-2-thread-2] .j.p.f.ClusterAwareReaderFailoverHandler : [TaskB] Connected to reader: 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/'
+2023-11-13 23:25:44.549 TRACE 12980 --- [pool-2-thread-2] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [PROMOTED_TO_WRITER, NODE_CHANGED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_DELETED]
+2023-11-13 23:25:44.550 TRACE 12980 --- [pool-2-thread-2] .j.p.f.ClusterAwareReaderFailoverHandler : [TaskB] Host aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/ is not yet connected to a cluster. The cluster is still being reconfigured.
+2023-11-13 23:25:46.653 TRACE 12980 --- [pool-2-thread-2] .j.p.f.ClusterAwareReaderFailoverHandler : [TaskB] Host aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/ is not yet connected to a cluster. The cluster is still being reconfigured.
+2023-11-13 23:25:48.769 TRACE 12980 --- [pool-2-thread-2] .j.p.f.ClusterAwareReaderFailoverHandler : [TaskB] Host aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/ is not yet connected to a cluster. The cluster is still being reconfigured.
+2023-11-13 23:25:50.877 TRACE 12980 --- [pool-2-thread-2] .j.p.f.ClusterAwareReaderFailoverHandler : [TaskB] Host aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/ is not yet connected to a cluster. The cluster is still being reconfigured.
+2023-11-13 23:25:52.992 TRACE 12980 --- [pool-2-thread-2] .j.p.f.ClusterAwareReaderFailoverHandler : [TaskB] Host aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/ is not yet connected to a cluster. The cluster is still being reconfigured.
+2023-11-13 23:25:55.113 TRACE 12980 --- [pool-2-thread-2] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:25:55.114 TRACE 12980 --- [pool-2-thread-2] .j.p.f.ClusterAwareReaderFailoverHandler : [TaskB] Topology: 
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, NOT_AVAILABLE, weight=62959, 2023-11-13 23:25:54.0]
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=10, 2023-11-13 23:25:55.1121904]
+2023-11-13 23:25:55.114 TRACE 12980 --- [pool-2-thread-2] .j.p.f.ClusterAwareReaderFailoverHandler : Current reader connection is actually a new writer connection.
+2023-11-13 23:25:55.114 DEBUG 12980 --- [pool-2-thread-2] .j.p.f.ClusterAwareReaderFailoverHandler : [TaskB] Finished
+2023-11-13 23:25:55.114 DEBUG 12980 --- [pool-2-thread-1] .j.p.f.ClusterAwareReaderFailoverHandler : [TaskA] Finished
+2023-11-13 23:25:55.115 DEBUG 12980 --- [nio-8080-exec-4] .j.p.f.ClusterAwareReaderFailoverHandler : Successfully connected to the new writer instance: 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/'
+2023-11-13 23:25:55.116 DEBUG 12980 --- [nio-8080-exec-4] s.a.j.p.f.FailoverConnectionPlugin       : Connected to: HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=10, 2023-11-13 23:25:55.1121904]
+2023-11-13 23:25:55.116 ERROR 12980 --- [nio-8080-exec-4] s.a.j.p.f.FailoverConnectionPlugin       : The active SQL connection has changed due to a connection failure. Please re-configure session state if required.
+2023-11-13 23:25:55.118 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.OpenedConnectionTracker  : Invalidating opened connections to host: 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306[
+	org.postgresql.jdbc.PgConnection@76545ae0
+	org.postgresql.jdbc.PgConnection@5208b733
+	org.postgresql.jdbc.PgConnection@529d8951
+	org.postgresql.jdbc.PgConnection@644cceda
+	org.postgresql.jdbc.PgConnection@53741715
+	org.postgresql.jdbc.PgConnection@51cc29bf
+	org.postgresql.jdbc.PgConnection@23bbba99
+	org.postgresql.jdbc.PgConnection@5507b97
+	org.postgresql.jdbc.PgConnection@76ef0897
+	org.postgresql.jdbc.PgConnection@465e5624
+]'
+2023-11-13 23:25:55.118 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@76545ae0
+		org.postgresql.jdbc.PgConnection@5208b733
+		org.postgresql.jdbc.PgConnection@529d8951
+		org.postgresql.jdbc.PgConnection@644cceda
+		org.postgresql.jdbc.PgConnection@53741715
+		org.postgresql.jdbc.PgConnection@51cc29bf
+		org.postgresql.jdbc.PgConnection@23bbba99
+		org.postgresql.jdbc.PgConnection@5507b97
+		org.postgresql.jdbc.PgConnection@76ef0897
+		org.postgresql.jdbc.PgConnection@465e5624
+	 }
+		[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+	 }
+	
+]
+2023-11-13 23:25:55.119 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.119  WARN 12980 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection software.amazon.jdbc.wrapper.ConnectionWrapper@e548d87 - org.postgresql.jdbc.PgConnection@44a4f24 (The active SQL connection has changed due to a connection failure. Please re-configure session state if required.). Possibly consider using a shorter maxLifetime value.
+2023-11-13 23:25:55.121 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.122 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [PROMOTED_TO_WRITER, NODE_CHANGED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [PROMOTED_TO_READER, NODE_CHANGED]
+2023-11-13 23:25:55.122 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.e.HostMonitoringConnectionPlugin : Executing method 'Connection.isValid', monitoring is activated.
+2023-11-13 23:25:55.123 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.e.HostMonitoringConnectionPlugin : Monitoring HostSpec is associated with a cluster endpoint, plugin needs to identify the cluster connection.
+2023-11-13 23:25:55.124 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.e.HostMonitoringConnectionPlugin : Error occurred while identifying connection: 'java.sql.SQLException: An error occurred while obtaining the connections host ID.'.
+2023-11-13 23:25:55.125 DEBUG 12980 --- [nio-8080-exec-4] s.a.j.p.f.FailoverConnectionPlugin       : Detected an exception while executing a command: java.sql.SQLException: An error occurred while obtaining the connections host ID.
+2023-11-13 23:25:55.125 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.125  WARN 12980 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection software.amazon.jdbc.wrapper.ConnectionWrapper@715444b2 - org.postgresql.jdbc.PgConnection@5208b733 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2023-11-13 23:25:55.126 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.126 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.126  WARN 12980 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection software.amazon.jdbc.wrapper.ConnectionWrapper@5ddf11d - org.postgresql.jdbc.PgConnection@529d8951 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2023-11-13 23:25:55.127 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.128 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [PROMOTED_TO_WRITER, NODE_CHANGED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [PROMOTED_TO_READER, NODE_CHANGED]
+2023-11-13 23:25:55.128 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.e.HostMonitoringConnectionPlugin : Executing method 'Connection.isValid', monitoring is activated.
+2023-11-13 23:25:55.128 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.e.HostMonitoringConnectionPlugin : Monitoring HostSpec is associated with a cluster endpoint, plugin needs to identify the cluster connection.
+2023-11-13 23:25:55.128 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.e.HostMonitoringConnectionPlugin : Error occurred while identifying connection: 'java.sql.SQLException: An error occurred while obtaining the connections host ID.'.
+2023-11-13 23:25:55.129 DEBUG 12980 --- [nio-8080-exec-4] s.a.j.p.f.FailoverConnectionPlugin       : Detected an exception while executing a command: java.sql.SQLException: An error occurred while obtaining the connections host ID.
+2023-11-13 23:25:55.129 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.129  WARN 12980 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection software.amazon.jdbc.wrapper.ConnectionWrapper@21a4763d - org.postgresql.jdbc.PgConnection@644cceda (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2023-11-13 23:25:55.130 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.130 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.130  WARN 12980 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection software.amazon.jdbc.wrapper.ConnectionWrapper@4c983173 - org.postgresql.jdbc.PgConnection@53741715 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2023-11-13 23:25:55.130 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.130 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.131  WARN 12980 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection software.amazon.jdbc.wrapper.ConnectionWrapper@1fba8d86 - org.postgresql.jdbc.PgConnection@51cc29bf (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2023-11-13 23:25:55.131 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.131 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [PROMOTED_TO_WRITER, NODE_CHANGED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [PROMOTED_TO_READER, NODE_CHANGED]
+2023-11-13 23:25:55.132 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.e.HostMonitoringConnectionPlugin : Executing method 'Connection.isValid', monitoring is activated.
+2023-11-13 23:25:55.132 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.e.HostMonitoringConnectionPlugin : Monitoring HostSpec is associated with a cluster endpoint, plugin needs to identify the cluster connection.
+2023-11-13 23:25:55.132 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.e.HostMonitoringConnectionPlugin : Error occurred while identifying connection: 'java.sql.SQLException: An error occurred while obtaining the connections host ID.'.
+2023-11-13 23:25:55.132 DEBUG 12980 --- [nio-8080-exec-4] s.a.j.p.f.FailoverConnectionPlugin       : Detected an exception while executing a command: java.sql.SQLException: An error occurred while obtaining the connections host ID.
+2023-11-13 23:25:55.132 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.133  WARN 12980 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection software.amazon.jdbc.wrapper.ConnectionWrapper@7505d275 - org.postgresql.jdbc.PgConnection@23bbba99 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2023-11-13 23:25:55.133 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.133 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.e.HostMonitoringConnectionPlugin : Executing method 'Connection.isValid', monitoring is activated.
+2023-11-13 23:25:55.134 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.e.HostMonitoringConnectionPlugin : Monitoring HostSpec is associated with a cluster endpoint, plugin needs to identify the cluster connection.
+2023-11-13 23:25:55.133 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.134 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.e.HostMonitoringConnectionPlugin : Error occurred while identifying connection: 'java.sql.SQLException: An error occurred while obtaining the connections host ID.'.
+2023-11-13 23:25:55.134 DEBUG 12980 --- [nio-8080-exec-4] s.a.j.p.f.FailoverConnectionPlugin       : Detected an exception while executing a command: java.sql.SQLException: An error occurred while obtaining the connections host ID.
+2023-11-13 23:25:55.134 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.close'
+2023-11-13 23:25:55.135 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.135  WARN 12980 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection software.amazon.jdbc.wrapper.ConnectionWrapper@77125776 - org.postgresql.jdbc.PgConnection@5507b97 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2023-11-13 23:25:55.136 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.136 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.136  WARN 12980 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection software.amazon.jdbc.wrapper.ConnectionWrapper@7a0ce34e - org.postgresql.jdbc.PgConnection@76ef0897 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2023-11-13 23:25:55.137 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.137 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [PROMOTED_TO_WRITER, NODE_CHANGED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [PROMOTED_TO_READER, NODE_CHANGED]
+2023-11-13 23:25:55.137 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.e.HostMonitoringConnectionPlugin : Executing method 'Connection.isValid', monitoring is activated.
+2023-11-13 23:25:55.137 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.e.HostMonitoringConnectionPlugin : Monitoring HostSpec is associated with a cluster endpoint, plugin needs to identify the cluster connection.
+2023-11-13 23:25:55.138 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.e.HostMonitoringConnectionPlugin : Error occurred while identifying connection: 'java.sql.SQLException: An error occurred while obtaining the connections host ID.'.
+2023-11-13 23:25:55.138 DEBUG 12980 --- [nio-8080-exec-4] s.a.j.p.f.FailoverConnectionPlugin       : Detected an exception while executing a command: java.sql.SQLException: An error occurred while obtaining the connections host ID.
+2023-11-13 23:25:55.138 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.139  WARN 12980 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection software.amazon.jdbc.wrapper.ConnectionWrapper@31918734 - org.postgresql.jdbc.PgConnection@465e5624 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2023-11-13 23:25:55.140 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:25:55.141 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:25:55.141 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:25:55.243 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.245 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.close'
+2023-11-13 23:25:55.247 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.249 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.close'
+2023-11-13 23:25:55.250 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.250 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.close'
+2023-11-13 23:25:55.251 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.251 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.close'
+2023-11-13 23:25:55.252 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.253 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.close'
+2023-11-13 23:25:55.253 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.254 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.close'
+2023-11-13 23:25:55.255 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.255 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.close'
+2023-11-13 23:25:55.256 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.256 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.close'
+2023-11-13 23:25:55.258 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:55.258 TRACE 12980 --- [nnection closer] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.close'
+2023-11-13 23:25:56.234 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:25:56.466 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, NOT_AVAILABLE, weight=62959, 2023-11-13 23:25:54.0]
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=10, 2023-11-13 23:25:55.1121904]
+2023-11-13 23:25:56.467 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=10, 2023-11-13 23:25:55.1121904]
+2023-11-13 23:25:56.468 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 52.199.202.72
+2023-11-13 23:25:56.470 DEBUG 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Stale DNS data detected. Opening a connection to 'HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=10, 2023-11-13 23:25:55.1121904]'.
+2023-11-13 23:25:57.217 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+	 }
+	
+]
+2023-11-13 23:25:57.217 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+	 }
+	
+]
+2023-11-13 23:25:57.372 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+	 }
+	
+]
+2023-11-13 23:25:57.373 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+	 }
+	
+]
+2023-11-13 23:25:57.373 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:57.373 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:25:57.373 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:25:57.373 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:25:57.373 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:25:57.373 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:25:57.374 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.prepareStatement'
+2023-11-13 23:25:57.374 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.e.HostMonitoringConnectionPlugin : Executing method 'PreparedStatement.execute', monitoring is activated.
+2023-11-13 23:25:57.374 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:25:57.375 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:25:57.377 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'PreparedStatement.execute'
+2023-11-13 23:25:57.445 TRACE 12980 --- [nio-8080-exec-4] s.a.j.p.e.HostMonitoringConnectionPlugin : Monitoring deactivated for method 'PreparedStatement.execute'.
+2023-11-13 23:25:57.445 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'PreparedStatement.getResultSet'
+2023-11-13 23:25:57.445 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSet.getMetaData'
+2023-11-13 23:25:57.446 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSetMetaData.getColumnCount'
+2023-11-13 23:25:57.446 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSetMetaData.getColumnLabel'
+2023-11-13 23:25:57.446 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSetMetaData.getColumnType'
+2023-11-13 23:25:57.632 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSetMetaData.getColumnClassName'
+2023-11-13 23:25:57.702 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSet.getType'
+2023-11-13 23:25:57.702 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSet.isClosed'
+2023-11-13 23:25:57.703 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSet.next'
+2023-11-13 23:25:57.703 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSet.getString'
+2023-11-13 23:25:57.703 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSet.isClosed'
+2023-11-13 23:25:57.703 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSet.next'
+2023-11-13 23:25:57.703 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'ResultSet.close'
+2023-11-13 23:25:57.703 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getMetaData'
+2023-11-13 23:25:57.703 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'DatabaseMetaData.supportsMultipleResultSets'
+2023-11-13 23:25:57.704 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'PreparedStatement.getMoreResults'
+2023-11-13 23:25:57.704 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'PreparedStatement.getUpdateCount'
+2023-11-13 23:25:57.704 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'PreparedStatement.close'
+2023-11-13 23:25:57.704 TRACE 12980 --- [nio-8080-exec-4] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.clearWarnings'
+2023-11-13 23:25:58.586 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:25:58.791 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, NOT_AVAILABLE, weight=62943, 2023-11-13 23:25:56.4642191]
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=5, 2023-11-13 23:25:56.0]
+2023-11-13 23:25:58.792 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=5, 2023-11-13 23:25:56.0]
+2023-11-13 23:25:58.792 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 52.199.202.72
+2023-11-13 23:25:58.793 DEBUG 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Stale DNS data detected. Opening a connection to 'HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=5, 2023-11-13 23:25:56.0]'.
+2023-11-13 23:25:59.857 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+	 }
+	
+]
+2023-11-13 23:25:59.857 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+	 }
+	
+]
+2023-11-13 23:26:00.079 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+	 }
+	
+]
+2023-11-13 23:26:00.080 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+	 }
+	
+]
+2023-11-13 23:26:00.080 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:26:00.081 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:26:00.082 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:26:00.082 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:26:00.083 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:26:00.085 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:26:00.087 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:26:01.308 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:26:01.522 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, NOT_AVAILABLE, weight=2070, 2023-11-13 23:25:58.7902672]
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:25:58.0]
+2023-11-13 23:26:01.523 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:25:58.0]
+2023-11-13 23:26:01.523 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 52.199.202.72
+2023-11-13 23:26:01.523 DEBUG 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Stale DNS data detected. Opening a connection to 'HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:25:58.0]'.
+2023-11-13 23:26:02.664 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+	 }
+	
+]
+2023-11-13 23:26:02.664 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+	 }
+	
+]
+2023-11-13 23:26:02.886 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+	 }
+	
+]
+2023-11-13 23:26:02.886 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+	 }
+	
+]
+2023-11-13 23:26:02.886 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:26:02.887 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:26:02.887 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:26:02.888 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:26:02.888 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:26:02.889 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:26:02.890 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:26:04.216 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:26:04.434 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, NOT_AVAILABLE, weight=1329, 2023-11-13 23:26:01.5213224]
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=4, 2023-11-13 23:26:01.0]
+2023-11-13 23:26:04.434 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=4, 2023-11-13 23:26:01.0]
+2023-11-13 23:26:04.434 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 52.199.202.72
+2023-11-13 23:26:04.434 DEBUG 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Stale DNS data detected. Opening a connection to 'HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=4, 2023-11-13 23:26:01.0]'.
+2023-11-13 23:26:05.474 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+	 }
+	
+]
+2023-11-13 23:26:05.474 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+	 }
+	
+]
+2023-11-13 23:26:05.691 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+	 }
+	
+]
+2023-11-13 23:26:05.694 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+	 }
+	
+]
+2023-11-13 23:26:05.696 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:26:05.697 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:26:05.699 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:26:05.700 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:26:05.701 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:26:05.704 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:26:05.710 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:26:07.193 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:26:07.444 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, NOT_AVAILABLE, weight=1608, 2023-11-13 23:26:04.4343693]
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=6, 2023-11-13 23:26:03.0]
+2023-11-13 23:26:07.445 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=6, 2023-11-13 23:26:03.0]
+2023-11-13 23:26:07.446 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 52.199.202.72
+2023-11-13 23:26:07.446 DEBUG 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Stale DNS data detected. Opening a connection to 'HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=6, 2023-11-13 23:26:03.0]'.
+2023-11-13 23:26:08.525 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+	 }
+	
+]
+2023-11-13 23:26:08.525 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+	 }
+	
+]
+2023-11-13 23:26:08.730 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+	 }
+	
+]
+2023-11-13 23:26:08.732 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+	 }
+	
+]
+2023-11-13 23:26:08.733 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:26:08.733 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:26:08.733 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:26:08.733 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:26:08.734 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:26:08.737 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:26:08.742 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:26:09.701 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:26:09.866 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, NOT_AVAILABLE, weight=2205, 2023-11-13 23:26:07.4433292]
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=48, 2023-11-13 23:26:06.0]
+2023-11-13 23:26:09.867 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=48, 2023-11-13 23:26:06.0]
+2023-11-13 23:26:09.867 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 52.199.202.72
+2023-11-13 23:26:09.867 DEBUG 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Stale DNS data detected. Opening a connection to 'HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=48, 2023-11-13 23:26:06.0]'.
+2023-11-13 23:26:10.628 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+	 }
+	
+]
+2023-11-13 23:26:10.629 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+	 }
+	
+]
+2023-11-13 23:26:10.783 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+	 }
+	
+]
+2023-11-13 23:26:10.783 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+	 }
+	
+]
+2023-11-13 23:26:10.784 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:26:10.784 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:26:10.784 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:26:10.784 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:26:10.785 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:26:10.787 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:26:10.789 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:26:11.844 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:26:12.016 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, NOT_AVAILABLE, weight=2406, 2023-11-13 23:26:09.8662176]
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=20, 2023-11-13 23:26:09.0]
+2023-11-13 23:26:12.016 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=20, 2023-11-13 23:26:09.0]
+2023-11-13 23:26:12.016 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 52.199.202.72
+2023-11-13 23:26:12.017 DEBUG 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Stale DNS data detected. Opening a connection to 'HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=20, 2023-11-13 23:26:09.0]'.
+2023-11-13 23:26:12.782 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@45122e50
+	 }
+	
+]
+2023-11-13 23:26:12.782 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@45122e50
+	 }
+	
+]
+2023-11-13 23:26:12.945 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@45122e50
+	 }
+	
+]
+2023-11-13 23:26:12.945 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@44a4f24
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@45122e50
+	 }
+	
+]
+2023-11-13 23:26:12.945 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:26:12.946 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:26:12.946 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:26:12.946 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:26:12.946 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:26:12.946 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:26:12.947 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:26:13.947 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:26:14.106 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, NOT_AVAILABLE, weight=1220, 2023-11-13 23:26:12.0163049]
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=48, 2023-11-13 23:26:11.0]
+2023-11-13 23:26:14.108 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=48, 2023-11-13 23:26:11.0]
+2023-11-13 23:26:14.113 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 52.199.202.72
+2023-11-13 23:26:14.113 DEBUG 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Stale DNS data detected. Opening a connection to 'HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=48, 2023-11-13 23:26:11.0]'.
+2023-11-13 23:26:15.088 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+	 }
+	
+]
+2023-11-13 23:26:15.088 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+	 }
+	
+]
+2023-11-13 23:26:15.273 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+	 }
+	
+]
+2023-11-13 23:26:15.274 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+	 }
+	
+]
+2023-11-13 23:26:15.274 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:26:15.274 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:26:15.275 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:26:15.275 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:26:15.275 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:26:15.276 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:26:15.277 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:26:16.149 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:26:16.298 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, NOT_AVAILABLE, weight=1805, 2023-11-13 23:26:14.1048912]
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=9, 2023-11-13 23:26:13.0]
+2023-11-13 23:26:16.300 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=9, 2023-11-13 23:26:13.0]
+2023-11-13 23:26:16.300 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 52.199.202.72
+2023-11-13 23:26:16.301 DEBUG 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Stale DNS data detected. Opening a connection to 'HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=9, 2023-11-13 23:26:13.0]'.
+2023-11-13 23:26:17.104 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@29043ad3
+	 }
+	
+]
+2023-11-13 23:26:17.105 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@29043ad3
+	 }
+	
+]
+2023-11-13 23:26:17.262 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@29043ad3
+		org.postgresql.jdbc.PgConnection@29043ad3
+	 }
+	
+]
+2023-11-13 23:26:17.263 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@29043ad3
+		org.postgresql.jdbc.PgConnection@29043ad3
+	 }
+	
+]
+2023-11-13 23:26:17.263 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:26:17.263 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:26:17.263 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:26:17.263 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:26:17.263 TRACE 12980 --- [onnection adder] software.amazon.jdbc.Driver              : Opening connection to jdbc:aws-wrapper:postgresql://postgres-1.cluster-cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/postgres?ssl=true&sslmode=require
+2023-11-13 23:26:17.263 DEBUG 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : failoverMode=STRICT_WRITER
+2023-11-13 23:26:17.264 TRACE 12980 --- [onnection adder] s.a.j.p.f.FailoverConnectionPlugin       : Changes:
+	Host 'aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+	Host 'aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306/': [NODE_ADDED]
+2023-11-13 23:26:18.693 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Cluster endpoint resolves to 54.248.98.213.
+2023-11-13 23:26:18.932 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Topology: 
+   HostSpec[host=aurora-postgresql-instance1.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, READER, NOT_AVAILABLE, weight=1251, 2023-11-13 23:26:16.2975475]
+   HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:26:15.0]
+2023-11-13 23:26:18.932 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host: HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:26:15.0]
+2023-11-13 23:26:18.932 TRACE 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Writer host address: 52.199.202.72
+2023-11-13 23:26:18.932 DEBUG 12980 --- [onnection adder] s.a.j.p.staledns.AuroraStaleDnsHelper    : Stale DNS data detected. Opening a connection to 'HostSpec[host=aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com, port=3306, WRITER, AVAILABLE, weight=12, 2023-11-13 23:26:15.0]'.
+2023-11-13 23:26:19.752 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@29043ad3
+		org.postgresql.jdbc.PgConnection@29043ad3
+		org.postgresql.jdbc.PgConnection@7365660b
+	 }
+	
+]
+2023-11-13 23:26:19.752 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@29043ad3
+		org.postgresql.jdbc.PgConnection@29043ad3
+		org.postgresql.jdbc.PgConnection@7365660b
+	 }
+	
+]
+2023-11-13 23:26:19.914 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@29043ad3
+		org.postgresql.jdbc.PgConnection@29043ad3
+		org.postgresql.jdbc.PgConnection@7365660b
+		org.postgresql.jdbc.PgConnection@7365660b
+	 }
+	
+]
+2023-11-13 23:26:19.914 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.OpenedConnectionTracker  : Opened Connections Tracked: 
+[
+	[ aurora-postgresql-instance2.cpmbze74rgh9.ap-northeast-1.rds.amazonaws.com:3306:
+	 {
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@658370dc
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@7bd705a5
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@236a6eed
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@60d3ad08
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@1e27696
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@7aba20a
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@45122e50
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@2b5f8e4
+		org.postgresql.jdbc.PgConnection@29043ad3
+		org.postgresql.jdbc.PgConnection@29043ad3
+		org.postgresql.jdbc.PgConnection@7365660b
+		org.postgresql.jdbc.PgConnection@7365660b
+	 }
+	
+]
+2023-11-13 23:26:19.914 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+2023-11-13 23:26:19.914 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.isReadOnly'
+2023-11-13 23:26:19.915 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.getAutoCommit'
+2023-11-13 23:26:19.915 TRACE 12980 --- [onnection adder] s.a.jdbc.plugin.DefaultConnectionPlugin  : Executing method: 'Connection.setNetworkTimeout'
+
+
